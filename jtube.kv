@@ -1,0 +1,15 @@
+<BoxLayout>:
+    orientation: "vertical"
+    Label:
+        text: "Youtube Downloader"
+        font_size: 64
+        color: 0.92, 0.45, 0
+    TextInput:
+        hint_text: "Enter playlist or video url"
+        id: link
+        on_text: app.text()
+    Button:
+        text: "download"
+        font_size: 32
+        size: 100, 50
+        on_press: app.dw()
